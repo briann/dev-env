@@ -4,7 +4,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install build-essential libssl-dev curl rsync git
+RUN apt-get -y install build-essential libssl-dev curl rsync git tmux
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
